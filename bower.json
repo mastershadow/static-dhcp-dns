@@ -1,0 +1,22 @@
+{
+  "name": "static-dhcp-dns",
+  "authors": [
+    "Eduard Roccatello <eduard.roccatello@3dgis.it>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://www.3dgis.it",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootstrap3-dialog": "bootstrap-dialog#^1.35.2"
+  }
+}
