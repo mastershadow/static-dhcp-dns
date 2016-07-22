@@ -30,12 +30,12 @@ DNS_DST=/usr/local/etc/unbound/dns-hosts.conf
 diff $DHCP_SRC $DHCP_DST > /dev/null 2>&1
 if [ $? -eq 1 ] ; then
         cp $DHCP_SRC $DHCP_DST;
-        service isc-dhcpd restart;
+        /usr/sbin/service isc-dhcpd restart;
 fi
 
 diff $DNS_SRC $DNS_DST > /dev/null 2>&1
 if [ $? -eq 1 ] ; then
         cp $DNS_SRC $DNS_DST;
-        service unbound restart;
+        /usr/sbin/service unbound restart;
 fi
 ```
