@@ -100,6 +100,7 @@
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="lib/bootstrap3-dialog/dist/js/bootstrap-dialog.min.js"></script>
+    <script src="lib/bootstrap-validator/dist/validator.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

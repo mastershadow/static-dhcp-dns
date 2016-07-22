@@ -3,3 +3,4 @@
 define('DB_DSN', 'mysql:host=localhost;dbname=static_dhcp_dns');
 define('DB_USER', 'static_dhcp_dns');
 define('DB_PASS', 'static_dhcp_dns');
+define('OUTDIR', 'out');

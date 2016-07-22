@@ -22,6 +22,7 @@ class Bootstrap {
 		Flight::route('/data/form(/@id)',  array('DataController', 'form'));
 		Flight::route('POST /data/save',  array('DataController', 'save'));
 		Flight::route('/data/delete/@id',  array('DataController', 'delete'));
+		Flight::route('/data/generate',  array('DataController', 'generate'));
 		Flight::start();
 	}
 }

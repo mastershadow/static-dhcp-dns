@@ -1,9 +1,11 @@
+var validationOps = {};
+
 var generateConfiguration = function() {
-	console.log('generate-configuration');
+	window.location = window.location.pathname + 'data/generate';
 };
 
 var deleteHost = function(id) {
-	window.location += 'data/delete/' + id;
+	window.location = window.location.pathname + 'data/delete/' + id;
 };
 
 var editHost = function(id) {
@@ -14,6 +16,13 @@ var editHost = function(id) {
 	}
 	$.ajax(u).then(function(fData) {
 		$('.modal-body', d).html(fData);
+		$('form', d).validator(validationOps).on('submit', function (e) {
+  			if (e.isDefaultPrevented()) {
+    			console.log('invalid');	
+  			} else {
+    				// everything looks good!
+  			}
+		});
 		d.modal('show');
 	});
 };

@@ -6,21 +6,21 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="hostname">Hostname</label>  
   <div class="col-md-6">
-  <input id="hostname" name="hostname" type="text" placeholder="" value="<?php echo $host['hostname']; ?>" class="form-control input-md" required="">
+  <input id="hostname" name="hostname" type="text" placeholder="" value="<?php echo $host['hostname']; ?>" class="form-control input-md" required="" pattern="([a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])+">
   </div>
 </div>
 
 <div class="form-group">
   <label class="col-md-4 control-label" for="domain">Domain</label>  
   <div class="col-md-6">
-  <input id="domain" name="domain" type="text" placeholder="" value="<?php echo $host['domain']; ?>" class="form-control input-md" required="">
+  <input id="domain" name="domain" type="text" placeholder="" value="<?php echo $host['domain']; ?>" class="form-control input-md" required="" pattern="(([a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9]))+((\.)?([a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9]))*">
   </div>
 </div>
 
 <div class="form-group">
   <label class="col-md-4 control-label" for="ipv4">IPv4</label>  
   <div class="col-md-6">
-  <input id="ipv4" name="ipv4" type="text" placeholder="" value="<?php echo $host['ipv4']; ?>" class="form-control input-md" required="">
+  <input id="ipv4" name="ipv4" type="text" placeholder="" value="<?php echo $host['ipv4']; ?>" class="form-control input-md" required="" pattern="(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)">
   </div>
 </div>
 
@@ -47,7 +47,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="hwaddr">HW Address</label>  
   <div class="col-md-6">
-  <input id="hwaddr" name="hwaddr" type="text" placeholder="" value="<?php echo $host['hwaddr']; ?>" class="form-control input-md">
+  <input id="hwaddr" name="hwaddr" type="text" placeholder="" value="<?php echo $host['hwaddr']; ?>" class="form-control input-md" pattern="(([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2}))?">
   </div>
 </div>
 
